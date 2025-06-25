@@ -1,0 +1,20 @@
+1. Explain how your app handles form validation. What happens if a required field is missing or the date is in the future? (3–5 mins)
+The app checks for empty fields and validates dates properly. If any errors occur, they are shown directly on the form. Currently, only server-side validation is implemented.
+
+2. If we wanted to extend the app to support therapist logins, how would you structure that? (5–7 mins)
+I can assign a role to the therapist upon login. By identifying the user and their role, the app can then respond and behave accordingly based on that role.
+
+3. How would you deploy this app to a HIPAA-compliant cloud environment? (5–10 mins)
+AWS, GCP, Azure should all work, as tehy are HIPPA-compliant. I will containerize the app using Docker for consistency and portability and use Managed Container Services with Auto-Scaling enabled.
+
+4. Where would you place the code that initializes the database and why? (3–5 mins)
+I can put DB initialization logic inside main setup script.
+
+```
+python -m venv venv
+// Windows
+venv\Scripts\activate
+
+pip install -r requirements.txt
+python app.py
+```
