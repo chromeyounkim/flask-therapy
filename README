@@ -5,7 +5,7 @@ The app checks for empty fields and validates dates properly. If any errors occu
 I can assign a role to the therapist upon login. By identifying the user and their role, the app can then respond and behave accordingly based on that role.
 
 3. How would you deploy this app to a HIPAA-compliant cloud environment? (5–10 mins)
-AWS, GCP, Azure should all work, as tehy are HIPPA-compliant. I will containerize the app using Docker for consistency and portability and use Managed Container Services with Auto-Scaling enabled.
+AWS, GCP, Azure should all work, as they are HIPPA-compliant. I will containerize the app using Docker for consistency and portability and use Managed Container Services with Auto-Scaling enabled.
 
 4. Where would you place the code that initializes the database and why? (3–5 mins)
 I can put DB initialization logic inside main setup script.
